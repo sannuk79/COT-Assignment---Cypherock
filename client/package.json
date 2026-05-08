@@ -1,0 +1,18 @@
+{
+  "name": "cot-mta-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/client.js",
+    "gen:proto": "pbjs -t static-module -w commonjs -o proto/cot.js ../proto/cot.proto && pbts -o proto/cot.d.ts proto/cot.js"
+  },
+  "dependencies": {
+    "protobufjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3"
+  }
+}

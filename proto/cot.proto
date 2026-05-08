@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+message SessionConfig {
+  bool debug_reveal = 1;
+}
+
+message OTInit {
+  bytes point_a = 1;
+  uint32 bit_index = 2;
+}
+
+message OTResponse {
+  bytes point_b = 1;
+}
+
+message OTEncrypted {
+  bytes encrypted_m0 = 1;
+  bytes encrypted_m1 = 2;
+  bytes nonce = 3;
+}
+
+message MTAShare {
+  bytes additive_share = 1;
+}
+
+message DebugRevealRequest {
+  bytes multiplicative_share_x = 1;
+  bytes additive_share_u = 2;
+}
+
+message DebugRevealResponse {
+  bytes multiplicative_share_y = 1;
+  bool verified = 2;
+}

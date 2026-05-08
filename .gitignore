@@ -1,0 +1,27 @@
+# Build directories
+build/
+bin/
+obj/
+server/build/
+client/dist/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated docs (optional, but keeping repo clean)
+*.html
+*.pdf
+COT_MTA_Technical_Doc.html
+COT_MTA_Technical_Doc.pdf
+TECHNICAL_DOCS.md
